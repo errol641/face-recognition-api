@@ -1,2 +1,2 @@
-# face-recognition-backend
+# face-recognition-api
  
