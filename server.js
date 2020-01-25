@@ -11,7 +11,7 @@ const image = require('./controllers/image');
 const db = require('knex')({
     client: 'pg',
     connection: {
-      host : 'postgresql-tapered-69262',
+      host : '127.0.0.1',
       user : 'postgres',
       password : 'errol911E',
       database : 'facerecognition'
@@ -46,6 +46,6 @@ app.post('/imageurl', (req, res) => {
     image.handleApiCall(req, res);
 })
 
-app.listen(process.env.PORT || 3000, ()=> {
-    console.log(`Server is up on port ${process.env.PORT}`);
+app.listen(3000, ()=> {
+    console.log(`Server is up on port 3000`);
 });
