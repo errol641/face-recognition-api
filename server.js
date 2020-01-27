@@ -8,15 +8,9 @@ const signin = require('./controllers/signin');
 const profile = require('./controllers/profile');
 const image = require('./controllers/image');
 
-const db = require('knex')({
-    client: 'pg',
-    connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'errol911E',
-      database : 'facerecognition'
-    }
-});
+const config = require('./config');
+
+const db = require('knex')(config.DATABASE_CONFIG);
 
 
 const app = express();
@@ -46,6 +40,6 @@ app.post('/imageurl', (req, res) => {
     image.handleApiCall(req, res);
 })
 
-app.listen(3000, ()=> {
-    console.log(`Server is up on port 3000`);
+app.listen(config.PORT, ()=> {
+    console.log(`Server is up on port ${config.PORT}`);
 });
