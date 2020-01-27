@@ -16,7 +16,7 @@ If you are using postgreSQL:
 
 1. Open `config.js` and fill out your database login information 
 
-2. The server runs on port 3001. You can change the port in `config.js`
+2. The server runs on port 3001 by default. You can change the port in `config.js`
 
 ## HOW TO START
 
