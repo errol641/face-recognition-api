@@ -19,4 +19,4 @@ The server runs on port 3001. You can change the port in `config.js`
 ## HOW TO START
 
 1. Finish above steps
-2. ### `npm start'
+2. ### `npm start`
