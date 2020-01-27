@@ -4,7 +4,7 @@ Front-end app: https://github.com/errol641/face-recognition-app
 
 ## PREREQUISITES
 
-This server uses knexjs to query the postgreSQL database.
+This server uses [knex.js](https://www.npmjs.com/package/knex) to query the postgreSQL database.
 If you want to use a different database:
 
 1. Uninstall pg package with `npm uninstall pg`
