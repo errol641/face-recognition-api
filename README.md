@@ -1,5 +1,7 @@
 # Face Recognition Backend Server
 
+Front-end app: https://github.com/errol641/face-recognition-app
+
 ## PREREQUISITES
 
 This server uses knexjs to query the postgreSQL database.
